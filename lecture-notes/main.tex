@@ -16,8 +16,7 @@
 
 %TODO use other style that uses annotations? Or put comments into note/addendum?
 %TODO separate must have and extra references?
-%TODO use biber as a backend?
-\usepackage[backend=bibtex,style=alphabetic,bibencoding=utf8,giveninits=true,refsection=chapter]{biblatex}
+\usepackage[backend=biber,style=alphabetic,bibencoding=utf8,giveninits=true]{biblatex}
 \usepackage[unicode,pdftex]{hyperref}	% Extensive support for hypertext links in LaTeX
 
 
@@ -72,15 +71,24 @@ bookmarksnumbered=true,
 \part{Overview}
 
 \include{content/introduction}
+\include{content/critical-systems}
 
 \part{Static Techniques}
 
 %TODO put some description for the part but before the first chapter?
 % These techniques do not execute the system.
 
+\include{content/static-specification}
+\include{content/static-code}
+
 \part{Dynamic Techniques}
 
 \include{content/testing-overview}
+\include{content/development-testing}
+\include{content/test-design-specification}
+\include{content/test-design-structure}
+\include{content/test-process-levels}
+\include{content/test-automation}
 
 %
 % Appendices
