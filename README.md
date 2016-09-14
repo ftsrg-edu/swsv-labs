@@ -1,5 +1,5 @@
 # Software and Systems Verification (VIMIMA01) course
 
-Lecture notes and seminar materials for the [SWSV course](https://inf.mit.bme.hu/edu/courses/szore) at BME.
+Lecture notes and lab materials for the [SWSV course](https://inf.mit.bme.hu/edu/courses/szore) at [BME](http://www.bme.hu/?language=en).
 
-See the wiki pages for the seminars.
+See the [wiki pages](https://github.com/FTSRG/swsv/wiki) for the lab materials.
