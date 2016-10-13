@@ -4,6 +4,11 @@
   <groupId>hu.bme.mit.spaceship</groupId>
   <artifactId>hu.bme.mit.spaceship</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
