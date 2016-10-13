@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class GT4500Tests {
+public class GT4500Test {
 
 	private GT4500 ship;	
 	
