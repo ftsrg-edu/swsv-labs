@@ -14,6 +14,6 @@ public class AbstractCacheTest {
 	public void testPutNotForce() {
 		TestingCache cache = new TestingCache();
 		cache.put("apple", 5, false);
-		assertEquals(new Integer(5),cache.get("alma"));
+		assertEquals(new Integer(5),cache.get("apple"));
 	}
 }
