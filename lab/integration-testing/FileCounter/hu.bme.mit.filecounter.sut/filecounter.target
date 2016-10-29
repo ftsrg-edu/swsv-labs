@@ -2,6 +2,6 @@
 <?pde version="3.8"?><target name="FileCounter Platform" sequenceNumber="16">
 <locations>
 <location path="${eclipse_home}" type="Profile"/>
-<location path="${workspace_loc}/hu.bme.mit.filecounter.sut/dist" type="Directory"/>
+<location path="${project_loc}/dist" type="Directory"/>
 </locations>
 </target>
