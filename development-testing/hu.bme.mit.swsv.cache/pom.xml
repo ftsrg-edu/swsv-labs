@@ -4,6 +4,11 @@
 	<groupId>hu.bme.mit.swsv.cache</groupId>
 	<artifactId>hu.bme.mit.swsv.cache</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -55,8 +60,8 @@
 				</executions>
 			</plugin>
 		</plugins>
-
 	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -69,6 +74,5 @@
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.7.9</version>
 		</dependency>
-
 	</dependencies>
 </project>

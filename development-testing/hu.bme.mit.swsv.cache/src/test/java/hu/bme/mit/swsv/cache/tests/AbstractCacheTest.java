@@ -12,8 +12,14 @@ public class AbstractCacheTest {
 	
 	@Test
 	public void testPutNotForce() {
+		// Arrange
 		TestingCache cache = new TestingCache();
 		cache.put("apple", 5, false);
-		assertEquals(new Integer(5),cache.get("apple"));
+		
+		// Act
+		Integer returnedFromCache = cache.get("apple");
+		
+		// Assert
+		assertEquals(new Integer(5), returnedFromCache);
 	}
 }
