@@ -33,10 +33,10 @@ namespace SWSV.Complex
         }
 
         /// <summary>
-        /// Replaces the current service with the other one passed as argument.
+        /// Sets the current service under management to the other passed as argument.
         /// </summary>
-        /// <param name="service">The new service replacing the current one</param>
-        public void ReplaceService(Service service)
+        /// <param name="service">The new service to set as managed</param>
+        public void SetService(Service service)
         {
             Service = service;
         }
