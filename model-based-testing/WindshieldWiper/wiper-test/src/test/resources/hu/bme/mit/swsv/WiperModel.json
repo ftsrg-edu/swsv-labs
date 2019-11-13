@@ -1,0 +1,38 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "32f09eb0-0628-11ea-94f9-a5a2e9522f01",
+                    "name": "init",
+                    "sourceVertexId": "2811b8d0-0628-11ea-94f9-a5a2e9522f01",
+                    "targetVertexId": "0dbe5c30-0624-11ea-94f9-a5a2e9522f01"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "7527a000-0621-11ea-94f9-a5a2e9522f01",
+            "name": "WiperModel",
+            "startElementId": "2811b8d0-0628-11ea-94f9-a5a2e9522f01",
+            "vertices": [
+                {
+                    "id": "0dbe5c30-0624-11ea-94f9-a5a2e9522f01",
+                    "name": "v_Off",
+                    "properties": {
+                        "x": 412,
+                        "y": 123
+                    }
+                },
+                {
+                    "id": "2811b8d0-0628-11ea-94f9-a5a2e9522f01",
+                    "name": "start",
+                    "properties": {
+                        "x": 414,
+                        "y": 5
+                    }
+                }
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": null
+}
