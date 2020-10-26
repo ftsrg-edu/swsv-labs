@@ -15,9 +15,9 @@
   <name>SWSV Windshield Wiper MBT Exercise - MBT Tests</name>
 
   <properties>
-    <graphwalker.version>4.0.1</graphwalker.version>
+    <graphwalker.version>4.3.0</graphwalker.version>
     <maven.compiler.source>1.8</maven.compiler.source>
-	<maven.compiler.target>1.8</maven.compiler.target>
+	  <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
