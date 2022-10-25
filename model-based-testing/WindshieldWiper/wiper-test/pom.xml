@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -17,7 +17,7 @@
   <properties>
     <graphwalker.version>4.3.1</graphwalker.version>
     <maven.compiler.source>1.8</maven.compiler.source>
-	  <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -53,12 +53,12 @@
       <artifactId>graphwalker-maven-plugin</artifactId>
       <version>${graphwalker.version}</version>
     </dependency>
-      <dependency>
-	    <groupId>org.mockito</groupId>
-		<artifactId>mockito-core</artifactId>
-		<version>4.0.0</version>
-		<scope>test</scope>
-	  </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -67,7 +67,47 @@
         <groupId>org.graphwalker</groupId>
         <artifactId>graphwalker-maven-plugin</artifactId>
         <version>${graphwalker.version}</version>
+        <executions>
+          <execution>
+            <id>generate-test-sources</id>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>generate-test-sources</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.graphwalker</groupId>
+                    <artifactId>graphwalker-maven-plugin</artifactId>
+                    <versionRange>[${graphwalker.version},)</versionRange>
+                    <goals>
+                      <goal>generate-test-sources</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute>
+                      <runOnIncremental>true</runOnIncremental>
+                      <runOnConfiguration>true</runOnConfiguration>
+                    </execute>
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 </project>
